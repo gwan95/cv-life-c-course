@@ -10,15 +10,15 @@ int main()
 {
     std::cout << "Hello World!\n"; 
 
-	//std::ofstream ofs;
-	//ofs.open("write.text",std::ios::out | std::ios::app);
-	//ofs << " my name is wayne" << std::endl;
+	std::ofstream ofs;
+	ofs.open("write.text",std::ios::out | std::ios::app);
+	ofs << " my name is wayne" << std::endl;
 	//// 需要注意的是，如果先运行了一次，再运行另一次则之前写入 txt 中的内容会被覆盖
-	//// 如果想之前运行执行输出的内容不被下一次运行覆盖，则使用 ios::app格式
-	////ofs << " wayne is the best" << std::endl;// 
- //   ofs.close();
+	//如果想之前运行执行输出的内容不被下一次运行覆盖，则使用 ios::app格式
+	ofs << " wayne is the best" << std::endl;// 
+    ofs.close();
 
-	std::ifstream ifs;
+	/* std::ifstream ifs;
 	ifs.open("write.text",std::ios::in);
 	std::string buf;
 	while (getline(ifs, buf))
@@ -28,7 +28,7 @@ int main()
 		/*std::stringstream str(buf);
 		std::string str1, str2, str3, str4;
 		str >> str1 >> str2 >> str3 >> str4;
-		std::cout << str1 << " " << str2 << " " << str3 << " " << str4 << " " << std::endl;*/
+		std::cout << str1 << " " << str2 << " " << str3 << " " << str4 << " " << std::endl;
 
 		
 		std::string str1, str2, str3, str4;
@@ -37,7 +37,7 @@ int main()
 		std::cout << str1 << " " << str2 << " " << str3 << " " << str4 << " " << std::endl;
 
 	}
-	ifs.close();
+	ifs.close(); */
 
 
 }
